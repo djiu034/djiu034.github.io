@@ -8,37 +8,67 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background: #fafafa; color: #1a1a1a;
-    min-height: 100vh; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; padding: 2rem;
+    background: #fafafa; color: #1a1a1a; line-height: 1.9;
+    padding: 3rem 1.5rem;
   }
-  main { max-width: 560px; width: 100%; }
-  h1 { font-size: 3rem; font-weight: 700; letter-spacing: .1em; }
-  .sub { margin-top: .6rem; color: #666; font-size: 1.05rem; }
-  .bio { margin-top: 1.6rem; line-height: 1.9; color: #333; }
-  .tags { margin-top: 1.4rem; display: flex; flex-wrap: wrap; gap: .5rem; }
-  .tags span {
-    font-size: .85rem; color: #444; background: #eee;
-    padding: .35rem .8rem; border-radius: 999px;
-  }
-  nav { margin-top: 2rem; display: flex; gap: 1.4rem; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: .12em; }
+  .sub { margin-top: .5rem; color: #666; }
+  section { margin-top: 2.6rem; }
+  h2 { font-size: 1.05rem; font-weight: 600; letter-spacing: .2em; color: #888; margin-bottom: 1rem; }
+  p { color: #333; margin-bottom: .8rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .tags span { font-size: .85rem; color: #444; background: #eee; padding: .35rem .8rem; border-radius: 999px; }
+  .proj { border-top: 1px solid #e5e5e5; padding: 1.1rem 0; }
+  .proj:last-child { border-bottom: 1px solid #e5e5e5; }
+  .proj h3 { font-size: 1rem; font-weight: 600; }
+  .proj p { margin: .3rem 0 0; color: #555; font-size: .93rem; }
+  nav { margin-top: 2.4rem; display: flex; gap: 1.4rem; }
   nav a { color: #1a1a1a; text-decoration: none; font-size: .95rem; border-bottom: 1px solid #999; padding-bottom: 2px; }
   nav a:hover { border-color: #1a1a1a; }
-  footer { margin-top: 3rem; color: #999; font-size: .8rem; }
+  footer { margin-top: 3rem; color: #999; font-size: .8rem; text-align: center; }
 </style>
 </head>
 <body>
   <main>
     <h1>旧多</h1>
     <p class="sub">广东药科大学 · 护理硕士在读</p>
-    <p class="bio">关注护理机器人、护患沟通、大语言模型与人机协作，探索技术如何让照护更安全、更有人情味。</p>
-    <div class="tags">
-      <span>护理机器人</span><span>护患沟通</span><span>大语言模型</span><span>人机协作</span><span>患者安全</span>
-    </div>
-    <nav>
-      <a href="https://github.com/djiu034">GitHub</a>
-      <a href="mailto:djiu034@gmail.com">Email</a>
-    </nav>
+
+    <section>
+      <h2>关于</h2>
+      <p>护理学专业硕士研究生，研究方向为护理机器人、护患沟通与人机协作。关注大语言模型在医疗场景中的安全应用，探索技术如何让照护更安全、更有人情味。常用方法包括质性研究、德尔菲法、系统评价与健康数据分析。</p>
+      <div class="tags">
+        <span>护理机器人</span><span>护患沟通</span><span>大语言模型</span><span>人机协作</span><span>患者安全</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>项目</h2>
+      <div class="proj">
+        <h3>护理机器人参与住院护患沟通</h3>
+        <p>硕士课题：梳理住院病区中护理机器人可承担的沟通任务，探讨护士—机器人责任分配与人类监督、接管边界。</p>
+      </div>
+      <div class="proj">
+        <h3>住院护患沟通任务的德尔菲法研究</h3>
+        <p>基于文献证据的专家共识研究设计，界定护患沟通任务与人机责任边界。</p>
+      </div>
+      <div class="proj">
+        <h3>NHANES 心血管死亡风险分析</h3>
+        <p>基于美国国家健康与营养调查数据的可复现分析项目：代码、统计表格与可视化。</p>
+      </div>
+      <div class="proj">
+        <h3>AI Agent 科研技能与工作流</h3>
+        <p>为科研打造的 AI Agent 技能库：文献检索、系统评价、学术写作与论文评价。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>联系</h2>
+      <nav>
+        <a href="https://github.com/djiu034">GitHub</a>
+        <a href="mailto:djiu034@gmail.com">Email</a>
+      </nav>
+    </section>
   </main>
   <footer>© 2026 旧多</footer>
 </body>
